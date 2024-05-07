@@ -1,0 +1,6 @@
+name: "R2 Purge Cache Action"
+description: "Use Cloudflare API to purge files from cache"
+author: "meybesomeday"
+runs:
+  using: 'node20'
+  main: 'main.js'
