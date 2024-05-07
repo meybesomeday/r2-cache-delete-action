@@ -15,16 +15,18 @@ const options = {
 let files = []
 
 for (let url of process.env.URLS) {
-    file = {
-                url: url,
-                headers: {
-                    Origin: process.env.ORIGIN,
-                    Scheme: "https",
-                    Host: process.env.HOST,
-                    Referer: process.env.REFERER
+    if (url) {
+        file = {
+                    url: url,
+                    headers: {
+                        Origin: process.env.ORIGIN,
+                        Scheme: "https",
+                        Host: process.env.HOST,
+                        Referer: process.env.REFERER
+                    }
                 }
-            }
-    files.push(file)
+        files.push(file)
+    }
 }
 
 const req = http.request(options, function (res) {
