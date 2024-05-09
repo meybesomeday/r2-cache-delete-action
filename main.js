@@ -13,7 +13,9 @@ const http = require("https")
 // };
 
 let files = []
+console.log(process.env.URLS)
 let urls = process.env.URLS.split(',')
+console.log(urls)
 for (let url of urls) {
     if (url) {
         file = {
