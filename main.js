@@ -14,7 +14,7 @@ const http = require("https")
 
 let files = []
 let urls = process.env.URLS.split(',')
-for (let url of process.env.URLS) {
+for (let url of urls) {
     if (url) {
         file = {
                     url: url,
