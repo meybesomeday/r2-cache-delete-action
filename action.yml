@@ -4,3 +4,6 @@ author: "meybesomeday"
 runs:
   using: 'node20'
   main: 'main.js'
+branding:
+  icon: chevron-up
+  color: red
